@@ -7,8 +7,6 @@ const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState('New');
   const [videos, setVideos] = useState([]);
 
-  const apiKey = 'AIzaSyCZJepk-Plxp5nD-KiUidjRi28HE8ek7Fs';
-
   useEffect(() => {
     fetchFromAPI(
       `search?key=${process.env.REACT_APP_API_KEY}&type=video&part=snippet&q=${selectedCategory}`
