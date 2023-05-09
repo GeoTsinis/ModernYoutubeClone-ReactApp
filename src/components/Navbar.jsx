@@ -23,7 +23,7 @@ const Navbar = () => (
         alignItems: 'center',
       }}
     >
-      <img src={logo} atl="logo" height={45} />
+      <img src={logo} alt="logo" height={45} />
     </Link>
     <SearchBar />
   </Stack>
